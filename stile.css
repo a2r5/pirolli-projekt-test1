@@ -276,7 +276,7 @@ display: inline;
         height: 100vh;
     }
     .about-us{
-        padding: 0;
+        padding: 0 20px 20px 20px;
         position: absolute;
         top: 37%;
         left: 50%;
@@ -284,7 +284,7 @@ display: inline;
         z-index: 1;
         text-align: center;
         width: 100%;
-        margin: 50px 20px 20px 20px;
+        margin: 50px 0px 0px 0px;
     }
     .about-us p{
         padding-top: 20px;

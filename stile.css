@@ -1,0 +1,285 @@
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url(fonts/Montserrat/static/Montserrat-Medium.ttf);
+
+}
+@font-face{
+    font-family: nunito-sans;
+    src: url(fonts/NunitoSans_7pt_Expanded-Regular.ttf);
+}
+header{
+    height: 670px;
+    background-image: url(image/vetki_listia_vaza_883283_1366x768.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+.main{
+    max-width: 1366px;
+    margin: auto;
+}
+.logo{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    padding-top: 38px;
+    margin-left: 30px;
+}
+.main-menu{
+display: flex;
+justify-content: flex-end;
+    padding-top: 45px;
+}
+
+.main-menu li{
+    list-style-type: none;
+display: inline;
+    margin-right: 30px;
+}
+
+.main-menu li a{
+    font-family: montserrat-medium;
+    font-size: 15px;
+    text-decoration: none;
+  color: black;
+}
+
+.dropDawnMenu{
+    
+  float: right;
+  padding-top: 40px;
+  padding-right: 30px;
+
+}
+
+.iconMenu{
+    cursor: pointer;
+    width: 25px;
+    height: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 5px;
+    padding-top: 5px;
+    float: right;
+    z-index: 10;
+}
+.bar{
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.iconMenu .bar:first-child{
+    transform-origin: 50% 50%;
+}
+
+.iconMenu .bar:last-child{
+    transform-origin: 50% 50%;
+}
+
+.iconMenu.open .bar:first-child{
+    transform: translateY(6px) rotate(45deg);
+
+}
+
+.iconMenu.open .bar:last-child{
+    transform: translateY(-6px) rotate(-45deg);
+
+}
+
+.dropDawnLinks{
+    padding-top: 30px;
+    background-color: rgba(179, 179, 179, 0.5);
+    min-width: 250px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    position: relative;
+    z-index: 3;
+}
+
+.dropDawnLinks.show{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+
+.dropDawnLinks  li{
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.dropDawnLinks  li a{
+    text-decoration: none;
+    color: black;
+    font-family: montserrat-medium;
+    font-size: 15px;
+    
+}
+
+
+
+.about-us{
+   float: right;
+   padding-right: 30px;
+   margin-left: 100px;
+   margin-top: 180px; 
+   font-family: montserrat-medium;
+
+}
+.about-us h4{
+    font-size: 38px;
+    margin: 0;
+}
+.about-us p{
+    color: #787878;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.about-us-button{
+    width: 180px;
+    height: 54px;
+    background-color: #10c9c3;
+    border: 0;
+
+}
+
+.about-us-button span{
+    color: #ffffff;
+    font-family: montserrat-medium;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Медиа запросы для экранов меньше 750px*/
+
+
+
+@media (min-width: 750px){
+    .dropDawnMenu{
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-menu{
+        display: none;
+    }
+
+    .about-us-container{
+        position: relative;
+        height: 100vh;
+    }
+    .about-us{
+        padding: 0;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .about-us p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.width-content{
+    max-width: 1366px;
+    margin: auto;
+}
+
+.about{
+    margin: 100px 30px 100px 30px;
+    text-align: center;
+}
+.about h4{
+    font-family: montserrat-medium;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.about p{
+    font-family: nunito-sans;
+    font-size: 16px;
+    color: #787878;
+    margin: 40px 0 40px 0;
+}
+
+
+
+
+.skills{
+    min-height: 569px;
+    background-color: #f8f9f9; 
+    width: 100%;
+
+}
+.skill-img{
+    display: block;
+    float: right;
+    z-index: 0;
+}
+
+.skills h4{
+    font-family: montserrat-medium;
+    font-size: 30px;
+    padding-top: 160px;
+}
+
+.skill label{
+    display: block;
+    margin-bottom: 20px;
+    font-family: montserrat-medium;
+    font-size: 12px;
+}
+
+.skill{
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.progres{
+    background-color: #d8d8d8;
+    height: 3px;
+    width: 100%;
+}
+
+.progres-bar{
+    height: 3px;
+    background-color: #10c9c3;
+    transition: width 0.5s ease;
+}
+
+@media (max-width: 1220px){
+    .skill-img  {
+        display: none;
+    }
+    .skills{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

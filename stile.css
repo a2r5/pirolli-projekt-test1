@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: montserrat-medium;
@@ -8,12 +13,28 @@
     font-family: nunito-sans;
     src: url(fonts/NunitoSans_7pt_Expanded-Regular.ttf);
 }
-body{
-    margin: 0;
-    padding: 0;
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
+
+.header,
+.main,
+.footer {
+    width: 100%;
+}
+
+    html{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
 header{
-    height: 670px;
+ 
+    min-height: 670px;
     background-image: url(image/vetki_listia_vaza_883283_1366x768.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -167,51 +188,6 @@ display: inline;
 }
 
 
-
-
-
-
-
-
-
-
-/* Медиа запросы для экранов меньше 750px*/
-
-
-
-@media (min-width: 750px){
-    .dropDawnMenu{
-        display: none;
-    }
-}
-
-@media (max-width: 750px) {
-    .main-menu{
-        display: none;
-    }
-
-    .about-us-container{
-        position: relative;
-        height: 100vh;
-    }
-    .about-us{
-        padding: 0;
-        position: absolute;
-        top: 37%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        text-align: center;
-        margin: 50px 20px 0 20px;
-        width: 100%;
-        
-    }
-    .about-us p{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
 .width-content{
     max-width: 1366px;
     margin: auto;
@@ -280,6 +256,42 @@ display: inline;
     transition: width 0.5s ease;
 }
 
+/* Медиа запросы для экранов меньше 750px*/
+
+
+
+@media (min-width: 750px){
+    .dropDawnMenu{
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-menu{
+        display: none;
+    }
+
+    .about-us-container{
+        position: relative;
+        height: 100vh;
+    }
+    .about-us{
+        padding: 0;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        margin: 50px 0px 0px 0px;
+    }
+    .about-us p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width: 1220px){
     .skill-img  {
         display: none;
@@ -289,3 +301,14 @@ display: inline;
         padding-right: 30px;
     }
 }
+
+@media (min-width: 600px) {
+    body {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  }
+

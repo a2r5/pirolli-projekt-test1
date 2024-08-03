@@ -198,7 +198,9 @@ display: inline;
         transform: translate(-50%, -50%);
         z-index: 1;
         text-align: center;
-        margin-top: 50px;
+        padding: 50px 20px 0px 20px;
+        width: 100%;
+        margin: auto;
     }
     .about-us p{
         padding-top: 20px;
